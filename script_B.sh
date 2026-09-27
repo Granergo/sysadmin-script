@@ -1,1 +1,8 @@
-free -h
+N=10
+while true; do
+date "+%Y-%m-%d %H:%M:%S">>monitor.log
+free -h>>monitor.log
+df -h>>monitor.log
+uptime>>monitor.log
+sleep "$N"
+done
