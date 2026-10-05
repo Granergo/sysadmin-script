@@ -1,4 +1,4 @@
-#!/bin/bush
+#!/bin/bash
 
 N=10
 while true; do
