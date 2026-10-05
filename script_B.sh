@@ -1,6 +1,8 @@
+#!/bin/bush
+
 N=10
 while true; do
-echo "--- $(date '+%Y-%m-%d %H:%M:%S') ---">>monitor.log\
+echo "--- $(date '+%Y-%m-%d %H:%M:%S') ---">>monitor.log
 echo >> monitor.log
 echo "[[[Использование ОЗУ]]]">>monitor.log
 free -h >> monitor.log 2>&1
