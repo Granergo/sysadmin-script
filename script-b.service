@@ -1,0 +1,12 @@
+[Unit]
+Description=script-b service
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=docker start -a script-b
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
